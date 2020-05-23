@@ -1,10 +1,16 @@
 <h4 align="center">
-  App with Nubank animations used in: 
+  App used to introduce the React Native Animations in the post: 
 </h4>
 
-![](https://i.ibb.co/gmSmW37/Complete.gif)
+<p align="center">
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-## :rocket: Technologies
+
+<p align="center">
+  <img alt="Complete animation" src="Complete.gif">
+</p>
 
 ## :information_source: How To Use
 
