@@ -1,38 +1,8 @@
 <h4 align="center">
   App with Nubank animations used in: 
 </h4>
-<p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lukemorales/rocketshoes-react-native.svg">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lukemorales/rocketshoes-react-native.svg">
-
-  <a href="https://www.codacy.com/app/lukemorales/rocketshoes-react-native?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lukemorales/rocketshoes-react-native&amp;utm_campaign=Badge_Grade">
-    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/e4cc1482460841bdaa99c2e75e01f0bc.svg">
-  </a>
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/lukemorales/rocketshoes-react-native.svg">
-  <a href="https://github.com/lukemorales/rocketshoes-react-native/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lukemorales/rocketshoes-react-native.svg">
-  </a>
-
-  <a href="https://github.com/lukemorales/rocketshoes-react-native/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/lukemorales/rocketshoes-react-native.svg">
-  </a>
-
-  <img alt="GitHub" src="https://img.shields.io/github/license/lukemorales/rocketshoes-react-native.svg">
-</p>
-
-<p align="center">
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
-</p>
-
-<img alt="Demo on Netlify" src="https://i.ibb.co/gmSmW37/Complete.gif">
-
-<p align="center">
-  <img alt="Demo on Netlify" src="https://i.ibb.co/gmSmW37/Complete.gif">
-</p>
+![](https://i.ibb.co/gmSmW37/Complete.gif)
 
 ## :rocket: Technologies
 
