@@ -8,7 +8,7 @@ Thus in this post we will see an introduction of how to uses the React Native An
 
 ![](Complete.gif)
 
-## Animated Library
+## Animation library basics
 
 The React Native Animated library provide us two types of values tha we can use to aninate our components:
 
@@ -411,6 +411,6 @@ The `else` clausule define the reverse path to the top.
 
 ![](Complete.gif)
 
-This post was a little introduction about React Native Animated and now we can explorer another libraries that improve the animations performance running on UI thread without having to go through the bridge on every frame: [React Native Reanimated](https://software-mansion.github.io/react-native-reanimated) and [React Native Gesture Handler](https://software-mansion.github.io/react-native-gesture-handler/).
+This post was a little introduction about React Native Animated and we saw how tp apply some animations in an app. However we can explorer another libraries that improve the animations performance running on UI thread without having to go through the bridge on every frame: [React Native Reanimated](https://software-mansion.github.io/react-native-reanimated) and [React Native Gesture Handler](https://software-mansion.github.io/react-native-gesture-handler/).
 
 [Source code]()
