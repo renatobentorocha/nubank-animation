@@ -18,19 +18,22 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/lukemorales/rocketshoes-react-native rocketshoesRN
+$ git clone https://github.com/renatobentorocha/nubank-animation.git nubankAnimation
 
 # Go into the repository
-$ cd rocketshoes-react-native
+$ cd nubankAnimation
 
 # Install dependencies
-$ yarn install
+$ yarn
+
+# Install pods
+$ cd ios && pod install && cd ../
 
 # Run the app (iOS)
-$ react-native run-ios --simulator="iPhone XS Max"
+$ yarn react-native run-ios --simulator="iPhone 8"
 
 # Run the app (Android)
-$ react-native run-android
+$ yarn react-native run-android
 ```
 
 ## :memo: License
@@ -38,7 +41,7 @@ This project is under the MIT license. See the [LICENSE](https://github.com/luke
 
 ---
 
-Made with ♥ by Luke Morales :wave: [Get in touch!](https://www.linkedin.com/in/lukemorales/)
+Made with ♥ by Renato Rocha :wave: [Get in touch!](https://www.linkedin.com/in/renato-rocha-62146a74/)
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
