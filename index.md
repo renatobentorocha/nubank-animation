@@ -4,13 +4,13 @@ According to [statista](https://www.statista.com/statistics/330695/number-of-sma
 
 This application can be seen in many areas, like: music (Spotify), travel (Tripadvisor, Uber) and social network (Facebook, Instagram). When we are using some of this apps or another one, our experience improves as the application provides smoother transitions and interactions.
 
-Thus in this post we will see an introduction of how to uses the React Native Animation library for improves the user expirence in application and we will uses the Nubank interface as example.
+Thus in this post we will see an introduction of how to uses the React Native Animation library for improves the user experience in application and we will uses the Nubank interface as example.
 
-![](Complete.gif)
+![](https://i.ibb.co/gmSmW37/Complete.gif)
 
 ## Animation library basics
 
-The React Native Animated library provide us two types of values tha we can use to aninate our components:
+The React Native Animated library provide us two types of values tha we can use to animate our components:
 
 - Animated.Value
 - Animated.ValueXY
@@ -40,9 +40,9 @@ In the rest of this post we will use this Animated values and functions to anima
 
 ## Horizontal animation
 
-As we can see, when the app initialise, the first animantion that occur is a horizontal moving of card and bottom buttons. Bellow we have the code and image app without any animation:
+As we can see, when the app initialise, the first animation that occur is a horizontal moving of card and bottom buttons. Bellow we have the code and image app without any animation:
 
-![](FirstStaticCode.png)
+![](https://i.ibb.co/JRmJJ7r/First-Static-Code.png)
 
 So our first step will be create a horizontal animation for the card and bottom buttons after the app has ben initialized.
 
@@ -97,9 +97,9 @@ When the `Animated.spring` initialise it will increment the bottomButtonsAnimate
 <Card horizontalShift={bottomButtonsAnimated} />
 ```
 
-and we will get the firts animations:
+and we will get the first animations:
 
-![](Horizontal.gif)
+![](https://i.ibb.co/Swx1Qf0/Horizontal.gif)
 
 ## Vertical animation
 
@@ -199,7 +199,7 @@ and internally the card component handles the parameters:
 
 where the `WrapperSwiper` is a `Animated.View`.
 
-![](FirstVertical.gif)
+![](https://i.ibb.co/ZX2QCX6/First-Vertical.gif)
 
 The above gif demonstrates the results for vertical the moving, however we still have two issues with it gif:
 
@@ -210,7 +210,7 @@ The above gif demonstrates the results for vertical the moving, however we still
 
 When we slide the card, we need change the opacity from another components. So that the menu options under the card need initialise with zero opacity and growth to one as the card slide down. We need also that the `<BottomButtons />` opacity initialise with one opacity and go to zero as the card slide down.
 
-At this point we have creating our animantions applying changes to animated variables `cardAnimatedValueY` straightly. However we can obtain another animated values as our animated variables `cardAnimatedValueY` changes, example:
+At this point we have creating our animations applying changes to animated variables `cardAnimatedValueY` straightly. However we can obtain another animated values as our animated variables `cardAnimatedValueY` changes, example:
 
 | cardAnimatedValueY | Result |
 | ------------------ | ------ |
@@ -268,15 +268,15 @@ and the `opacityBottomButtons` to:
 <BottomButtons opacity={opacityBottomButtons} />
 ```
 
-![](opacity.gif)
+![](https://i.ibb.co/Rvc3Gp2/opacity.gif)
 
 ### Fix card position after release and touch again
 
-If we put a `console.log` statement insede the `onPanResponderMove` method and print the `gestureState.dy` value, we can see that the variable that contain the vertical displacement became zero always that we release the card and touch again.
+If we put a `console.log` statement inside the `onPanResponderMove` method and print the `gestureState.dy` value, we can see that the variable that contain the vertical displacement became zero always that we release the card and touch again.
 
-![](CardRelease.gif)
+![](https://i.ibb.co/Sw8gzD6/Card-Release.gif)
 
-So to solve this we need save the last `gestureState.dy` value to mantain the card postion. To do it, we create a variable that will acumulate vertical displacement on each release inside `onPanResponderRelease` method wich will be executed after the touch release.
+So to solve this we need save the last `gestureState.dy` value to maintain the card position. To do it, we create a variable that will accumulate vertical displacement on each release inside `onPanResponderRelease` method that will be executed after the touch release.
 
 ```jsx
 export default function App() {
@@ -309,11 +309,11 @@ export default function App() {
   ).current;
 ```
 
-![](ReleaseCardOk.gif)
+![](https://i.ibb.co/6mpVFGH/Release-Card-Ok.gif)
 
 ### Auto vertical displacement
 
-At the post begin we saw a gif in wich when we touch the card, move it move until certain point and release the card, it auto displacement to bottom or top. So our last step will be create this behavior.
+At the post begin we saw a gif in which when we touch the card, move it move until certain point and release the card, it auto displacement to bottom or top. So our last step will be create this behavior.
 
 As we saw, the method that catch the event related to release the touch is: `onPanResponderRelease`. Thus we will change this method to make our feature.
 
@@ -354,9 +354,9 @@ export default function App() {
   ).current;
 ```
 
-In the above code snipet we add the `down` variable that will contain the direction that the card will be take. The `restOffSet` represents the units that the card can slide to the bottom. So if the direction is down and the card offset is bigger than or equal to 100 units, the card will slide `restOffSet`.
+In the above code snippet we add the `down` variable that will contain the direction that the card will be take. The `restOffSet` represents the units that the card can slide to the bottom. So if the direction is down and the card offset is bigger than or equal to 100 units, the card will slide `restOffSet`.
 
-![](autoSlideDown.gif)
+![](https://i.ibb.co/34Df1R7/auto-Slide-Down.gif)
 
 Now what we need is make the reverse path, to the top:
 
@@ -409,7 +409,7 @@ export default function App() {
 
 The `else` clausule define the reverse path to the top.
 
-![](Complete.gif)
+![](https://i.ibb.co/gmSmW37/Complete.gif)
 
 This post was a little introduction about React Native Animated and we saw how tp apply some animations in an app. However we can explorer another libraries that improve the animations performance running on UI thread without having to go through the bridge on every frame: [React Native Reanimated](https://software-mansion.github.io/react-native-reanimated) and [React Native Gesture Handler](https://software-mansion.github.io/react-native-gesture-handler/).
 
