@@ -1,5 +1,5 @@
 <h4 align="center">
-  App used to introduce the React Native Animations in the post: 
+  App used to introduce the React Native Animations in the post: https://dev.to/renatobentorocha/introduction-to-react-native-animations-10lf
 </h4>
 
 <p align="center">
